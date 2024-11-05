@@ -14,8 +14,8 @@
     <div class="absolute inset-0 bg-black opacity-20 z-5"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white mt-12 md:mt-24 max-w-screen-lg mx-auto px-4">
-      <h1 class="text-2xl md:text-5xl font-bold mb-4">
+    <div class="relative z-10 text-center text-white md:mt-12 md:mt-24 max-w-screen-lg mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">
         Selamat Datang di Kang Hikmah AlTajrib
       </h1>
       <div class="flex justify-center">
