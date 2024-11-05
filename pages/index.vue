@@ -1,11 +1,14 @@
 <template>
-    <div>
-        <HomeNavbar />
-        <HomeHero />
-        <HomeCTA />
-        <HomeAboutUs />
-        <HomeTestimonial />
-        <HomeServices />
-        <HomeFooter />
-    </div>
+  <div>
+    <HomeCTA />
+    <HomeAboutUs />
+    <HomeServices />
+    <HomeTestimonial />
+  </div>
 </template>
+
+<script setup>
+definePageMeta({
+  layout: "default",
+});
+</script>
