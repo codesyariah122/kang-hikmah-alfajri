@@ -21,18 +21,24 @@
           placeholder="Email Anda"
           class="input-email"
         />
-        <button
-          @click="startChat"
-          class="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
-        >
-          Mulai Chat
-        </button>
-        <button
-          @click="closeModal"
-          class="bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4"
-        >
-          Tutup
-        </button>
+        <div class="flex gap-3 justify-center">
+          <div>
+            <button
+              @click="startChat"
+              class="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
+            >
+              Mulai Chat
+            </button>
+          </div>
+          <div>
+            <button
+              @click="closeModal"
+              class="bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -58,7 +64,13 @@ export default {
         window.$crisp.push(["set", "user:email", [this.email]]);
         window.$crisp.push(["do", "chat:show"]);
         window.$crisp.push(["do", "chat:open"]);
-        $crisp.push(["set", "message:text", ["Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan."]]);
+        $crisp.push([
+          "set",
+          "message:text",
+          [
+            "Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan.",
+          ],
+        ]);
         // setTimeout(() => {
         //   window.$crisp.push([
         //     "do",
