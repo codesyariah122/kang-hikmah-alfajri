@@ -8,6 +8,11 @@
         :pagination="{ clickable: true }"
         :autoplay="{ delay: 3000 }"
         :navigation="{ clickable: true }"
+        :breakpoints="{
+          0: { slidesPerView: 1 }, // 1 slide untuk layar kecil (mobile)
+          768: { slidesPerView: 2 }, // 2 slide untuk layar sedang (tablet)
+          1024: { slidesPerView: 3 }, // 3 slide untuk layar besar (desktop)
+        }"
       >
         <swiper-slide
           v-for="(testimonial, index) in testimonials"
@@ -47,6 +52,7 @@ import { ref } from "vue";
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css/pagination";
+
 const testimonials = [
   { video: "testi-video1.mp4", name: "Ahmad" },
   {
