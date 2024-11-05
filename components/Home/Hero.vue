@@ -7,7 +7,7 @@
       loop
       class="absolute inset-0 w-full h-full object-cover z-0"
     >
-      <source src="public/videos/bg-video3.mp4" type="video/mp4" />
+      <source src="/videos/bg-video3.mp4" type="video/mp4" />
     </video>
 
     <!-- Overlay Background -->
@@ -120,6 +120,8 @@ const startChat = () => {
   if (email.value) {
     window.$crisp.push(["set", "user:email", [email.value]]);
     window.$crisp.push(["do", "chat:show"]);
+    $crisp.push(["set", "message:text", ["Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan."]]);
+
     closeModal();
   } else {
     alert("Silakan masukkan email Anda");
