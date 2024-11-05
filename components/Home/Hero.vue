@@ -14,23 +14,23 @@
     <div class="absolute inset-0 bg-black opacity-20 z-5"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white py-12">
-      <h1 class="text-5xl font-bold mb-4">
+    <div class="relative z-10 text-center text-white mt-12 md:mt-24 max-w-screen-lg mx-auto px-4">
+      <h1 class="text-2xl md:text-5xl font-bold mb-4">
         Selamat Datang di Kang Hikmah AlTajrib
       </h1>
       <div class="flex justify-center">
         <div>
           <img
             src="/images/profile.png"
-            class="rounded-full w-96 h-96 mb-8 bg-gray-100 profile-image"
+            class="rounded-full w-48 h-48 md:w-96 md:h-96 mb-8 bg-gray-100 profile-image"
             alt=""
           />
         </div>
       </div>
-      <p class="text-lg mb-8">
+      <p class="text-lg md:text-xl mb-8">
         Layanan Konsultasi Pengobatan Alternatif dan Spiritual
       </p>
-      <a
+      <a id="get-started"
         @click="showPopup = true"
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
         >Hubungi Kami </a>

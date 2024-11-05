@@ -1,5 +1,5 @@
 <template>
-  <section id="testimonials" class="py-20 bg-gray-100">
+  <section id="testimonial" class="py-20 bg-gray-100">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8">Testimoni Klien</h2>
       <swiper
