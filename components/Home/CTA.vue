@@ -43,6 +43,7 @@ export default {
         window.$crisp.push(["set", "user:email", [this.email]]);
         // Tampilkan chat setelah email diatur
         window.$crisp.push(["do", "chat:show"]);
+        window.$crisp.push(["do", "chat:send", "Halo kang, saya ingin konsultasi seputar titit kecil"]);
         // Tutup modal
         this.closeModal();
       } else {
