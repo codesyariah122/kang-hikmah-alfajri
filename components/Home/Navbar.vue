@@ -9,7 +9,7 @@
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/kanjeng.webp" class="h-8" alt="Flowbite Logo" />
         <span :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
-          class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          class="self-center text-2xl font-semibold whitespace-nowrap "
           >AlTajrib</span
         >
       </a>
@@ -65,7 +65,7 @@
             <a
               :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
               href="#about"
-              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >About</a
             >
           </li>
@@ -73,7 +73,7 @@
             <a
               :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
               href="#services"
-              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Services</a
             >
           </li>
@@ -81,7 +81,7 @@
             <a
               :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
               href="#testimonial"
-              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Testimonial</a
             >
           </li>
@@ -89,7 +89,7 @@
             <a
               :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
               href="#contact"
-              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Contact</a
             >
           </li>
