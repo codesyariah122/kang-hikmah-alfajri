@@ -58,14 +58,14 @@ export default {
         window.$crisp.push(["set", "user:email", [this.email]]);
         window.$crisp.push(["do", "chat:show"]);
         window.$crisp.push(["do", "chat:open"]);
-
-        setTimeout(() => {
-          window.$crisp.push([
-            "do",
-            "chat:send",
-            "Halo kang, saya ingin konsultasi seputar titit kecil",
-          ]);
-        }, 2000);
+        $crisp.push(["set", "message:text", ["Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan."]]);
+        // setTimeout(() => {
+        //   window.$crisp.push([
+        //     "do",
+        //     "chat:send",
+        //     "Halo kang, saya ingin konsultasi seputar titit kecil",
+        //   ]);
+        // }, 2000);
         // Tutup modal
         this.closeModal();
       } else {
