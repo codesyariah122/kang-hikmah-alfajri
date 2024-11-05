@@ -1,44 +1,22 @@
 <template>
   <section class="py-20 bg-blue-600 text-center text-white">
-    <h2 class="text-4xl font-bold mb-4">
-      Butuh Bantuan? Kami di sini untuk Anda
-    </h2>
+    <h2 class="text-4xl font-bold mb-4">Butuh Bantuan? Kami di sini untuk Anda</h2>
     <p class="text-lg mb-8">Dapatkan konsultasi gratis sekarang</p>
-    <button
-      @click="openModal"
-      class="bg-white text-blue-600 font-bold py-2 px-4 rounded"
-    >
+    <button @click="openModal" class="bg-white text-blue-600 font-bold py-2 px-4 rounded">
       Konsultasi Sekarang
     </button>
 
     <!-- Modal untuk Input Email -->
     <div v-if="isModalOpen" class="modal-overlay">
-      <div class="modal">
-        <h3 class="text-xl font-bold mb-4 text-black">Masukkan Email Anda</h3>
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Email Anda"
-          class="input-email text-black"
-        />
-        <div class="flex gap-2 justify-center">
-          <div>
-            <button
-              @click="startChat"
-              class="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
-            >
-              Mulai Chat
-            </button>
-          </div>
-          <div>
-            <button
-              @click="closeModal"
-              class="bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4"
-            >
-              Tutup
-            </button>
-          </div>
-        </div>
+      <div class="modal text-black">
+        <h3 class="text-xl font-bold mb-4">Masukkan Email Anda</h3>
+        <input v-model="email" type="email" placeholder="Email Anda" class="input-email"/>
+        <button @click="startChat" class="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">
+          Mulai Chat
+        </button>
+        <button @click="closeModal" class="bg-gray-600 text-white font-bold py-2 px-4 rounded mt-4">
+          Tutup
+        </button>
       </div>
     </div>
   </section>
@@ -49,7 +27,7 @@ export default {
   data() {
     return {
       isModalOpen: false,
-      email: "",
+      email: ''
     };
   },
   methods: {
@@ -63,15 +41,15 @@ export default {
       if (this.email) {
         // Set email pengguna di Crisp
         window.$crisp.push(["set", "user:email", [this.email]]);
-        // Tampilkan chat
+        // Tampilkan chat setelah email diatur
         window.$crisp.push(["do", "chat:show"]);
         // Tutup modal
         this.closeModal();
       } else {
         alert("Silakan masukkan email Anda");
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
