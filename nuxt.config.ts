@@ -64,7 +64,7 @@ export default defineNuxtConfig({
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://raw.githubusercontent.com/codesyariah122/kang-hikmah-alfajri/refs/heads/main/public/kanjeng.webp",
+        content: "https://raw.githubusercontent.com/codesyariah122/kang-hikmah-alfajri/refs/heads/main/public/kanjeng.png",
       },
       {
         hid: "og:image:width",
