@@ -45,7 +45,7 @@
         <h2 class="text-xl font-bold mb-4">Hubungi Kami Melalui:</h2>
         <div class="flex flex-col space-y-2">
           <a
-            href="https://wa.me/6285156174263?text=Halo Kang Hikmah AlTajrib, saya ingin konsultasi masalah titit saya itu kecil bisa di besarkan gak ?"
+            href="https://wa.me/6285923158567?text=Halo Kang Hikmah AlTajrib, saya ingin konsultasi masalah titit saya itu kecil bisa di besarkan gak ?"
             target="_blank"
             class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
             >Chat via WhatsApp</a
