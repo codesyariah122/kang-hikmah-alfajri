@@ -16,7 +16,7 @@
     >
       Browser Anda tidak mendukung video.
     </video> -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HlyxIeEJmjo?si=WstxBC-MeNJR7eJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="w-full h-80" src="https://www.youtube.com/embed/HlyxIeEJmjo?si=WstxBC-MeNJR7eJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </template>
 
