@@ -22,11 +22,11 @@
         <HomeMoleculesProfile />
       </div>
       <p class="text-lg md:text-xl mb-8">
-        Layanan Konsultasi Pengobatan Alternatif dan Spiritual
+        Layanan Konsultasi Pengobatan Alternatif, Spirituil dan konsultasi bidang ilmiah dalam idiom kebatinan yang mutlak
       </p>
       <a id="get-started"
         @click="showPopup = true"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        class="bg-blue-500 mt-16 mb-6 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
         >Hubungi Kami </a>
     </div>
 
