@@ -8,14 +8,15 @@
         kedamaian dan pemahaman yang lebih mendalam.
       </p>
       
-      <video
+      <!-- <video
         class="w-full rounded-lg shadow-lg"
         autoplay="true"
         controls
         src="/videos/video-content1.mp4"
       >
         Browser Anda tidak mendukung video.
-      </video>
+      </video> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HlyxIeEJmjo?si=WstxBC-MeNJR7eJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </template>
 
