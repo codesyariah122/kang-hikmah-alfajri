@@ -26,7 +26,7 @@
           <span class="sr-only">Konsultasi hari ini </span>
         </span>
         <span
-          >Diskon 50% , hari minggu harga naik {{ showCta ? 'True' : 'False' }}
+          >Diskon 50% , hari minggu harga naik
           <a
             href="#home"
             class="flex items-center ms-0 text-sm font-medium text-blue-600 md:ms-1 md:inline-flex dark:text-blue-500 hover:underline"
