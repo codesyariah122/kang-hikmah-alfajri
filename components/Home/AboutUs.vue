@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <div class="container mt-6 mb-12">
+    <div class="flex justify-center place-items-center mt-6 mb-12">
       <div>
         <img src="/images/service-1.jpeg" class="w-auto" alt="">
       </div>

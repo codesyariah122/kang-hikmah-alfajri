@@ -75,6 +75,16 @@ const testimonials = [
     name: "Rita",
     img: "testi5.jpeg",
   },
+  {
+    message: "Pelayanan ramah dan profesional.",
+    name: "Rita",
+    img: "testi6.jpeg",
+  },
+  {
+    message: "Pelayanan ramah dan profesional.",
+    name: "Rita",
+    img: "testi7.jpeg",
+  },
 ];
 </script>
 
