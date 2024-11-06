@@ -2,6 +2,7 @@
   <div>
     <HomeCTA />
     <HomeAboutUs />
+    <HomeReel />
     <HomeServices />
     <HomeTestimonial />
   </div>

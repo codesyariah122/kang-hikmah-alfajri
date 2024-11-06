@@ -1,9 +1,9 @@
 <template>
     <div>
-      <HomeNavbar />
+      <LayoutsNavbar />
       <HomeHero />
       <slot />
       <HomeContactUs />
-      <HomeFooter />
+      <LayoutsFooter />
     </div>
 </template>

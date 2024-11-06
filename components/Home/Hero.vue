@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative h-screen flex items-center justify-center">
+  <section id="home" class="relative h-screen flex items-center justify-center">
     <!-- Video Background -->
     <video
       autoplay
@@ -19,13 +19,7 @@
         Selamat Datang di Kang Hikmah AlTajrib
       </h1>
       <div class="flex justify-center">
-        <div>
-          <img
-            src="/images/profile.png"
-            class="rounded-full w-48 h-48 md:w-96 md:h-96 mb-8 bg-gray-100 profile-image"
-            alt=""
-          />
-        </div>
+        <HomeMoleculesProfile />
       </div>
       <p class="text-lg md:text-xl mb-8">
         Layanan Konsultasi Pengobatan Alternatif dan Spiritual
@@ -143,9 +137,9 @@ nav a {
   }
 }
 
-.profile-image:hover {
+/* .profile-image:hover {
   animation: rotate 5s linear infinite;
-}
+} */
 
 .fixed {
   position: fixed;

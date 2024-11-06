@@ -2,6 +2,7 @@
   <div>
     <NuxtLayout>
       <NuxtPage />
+      <HomeMoleculesBannerCta/>
     </NuxtLayout>
   </div>
 </template>

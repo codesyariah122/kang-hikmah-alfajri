@@ -54,7 +54,7 @@
         >
           <li>
             <a
-              href="#hero"
+              href="#home"
               :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
               class="block"
               aria-current="page"
