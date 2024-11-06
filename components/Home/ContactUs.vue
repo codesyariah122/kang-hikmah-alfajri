@@ -3,6 +3,11 @@
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8">Lokasi Praktek Kami</h2>
       <p class="text-lg mb-4">Alamat: Jl. Jatinangor, Bandung</p>
+      <div class="flex justify-center items-center">
+        <div>
+          <HomeMoleculesDrawer />
+        </div>
+      </div>
       <iframe src="https://maps.google.com/maps?q=Kec.%20Jatinangor%2C%20Kabupaten%20Sumedang%2C%20Jawa%20Barat&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-80"></iframe>
 
       <!-- <iframe

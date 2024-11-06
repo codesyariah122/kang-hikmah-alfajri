@@ -2,7 +2,7 @@
   <section id="about" class="py-20">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8">Tentang Kami</h2>
-      <p class="text-lg">
+      <p class="text-lg w-auto">
         Saya memilih menjadi "Dukun"/Consultant Spritual, karena
         dukun/Consultant Spritual selalu selangkah Lebih tinggi dari semua gelar
         , apapun gelarnya Saat berhadapan dengan Dukun Consultant Spritual, Dia
