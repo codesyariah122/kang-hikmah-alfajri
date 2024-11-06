@@ -21,12 +21,12 @@
       <div class="flex justify-center">
         <HomeMoleculesProfile />
       </div>
-      <p class="text-lg md:text-xl mb-8">
+      <p class="text-lg md:text-xl mb-12">
         Layanan Konsultasi Pengobatan Alternatif, Spirituil dan konsultasi bidang ilmiah dalam idiom kebatinan yang mutlak
       </p>
       <a id="get-started"
         @click="showPopup = true"
-        class="bg-blue-500 mt-16 mb-6 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        class="bg-blue-500 mt-16 mb-12 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
         >Hubungi Kami </a>
     </div>
 
@@ -128,18 +128,7 @@ nav a {
   scroll-behavior: smooth;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
 
-/* .profile-image:hover {
-  animation: rotate 5s linear infinite;
-} */
 
 .fixed {
   position: fixed;

@@ -117,7 +117,6 @@ export default {
       const drawer = document.getElementById("drawerExample");
       const drawerToggle = document.getElementById("drawerToggle");
       const drawerClose = document.getElementById("drawerClose");
-      console.log(drawer);
 
       if (drawerToggle && drawer) {
         drawerToggle.addEventListener("click", () => {

@@ -3,7 +3,7 @@
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8">Lokasi Praktek Kami</h2>
       <p class="text-lg mb-4">Alamat: Jl. Jatinangor, Bandung</p>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center mb-12">
         <div>
           <HomeMoleculesDrawer />
         </div>

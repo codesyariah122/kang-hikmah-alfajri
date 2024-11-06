@@ -11,7 +11,7 @@
 <style>
 .profile-wrapper {
   position: relative;
-  width: 12rem; /* Ukuran default untuk layar kecil */
+  width: 12rem;
   height: 12rem;
 }
 
@@ -24,8 +24,6 @@
 }
 
 .profile-image {
-  width: 100%;
-  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   position: relative;
@@ -53,6 +51,19 @@
   filter: blur(2vw); /* Blur responsif */
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.profile-image:hover {
+  animation: rotate 5s linear infinite;
+}
+ 
 @keyframes flame {
   0% {
     transform: scale(1) translateY(0);
