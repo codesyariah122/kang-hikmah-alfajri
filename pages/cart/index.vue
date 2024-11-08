@@ -18,7 +18,7 @@
   
         <div class="mt-6 flex justify-between items-center">
           <p class="text-lg font-semibold">Total: {{ totalPrice }}</p>
-          <button class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+          <button @click="processCheckout" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
             Proceed to Checkout
           </button>
         </div>
@@ -47,6 +47,12 @@
   // Remove item from cart
   function removeFromCart(index) {
     cartItems.value.splice(index, 1)
+  }
+
+  const processCheckout = () => {
+    // Placeholder for checkout process
+    alert('Sedang mempersiapkan dana dari investor ... meni lila nunggu dana ti investor ge')
+    cartItems.value = [] // Clear the cart after checkout
   }
   </script>
   

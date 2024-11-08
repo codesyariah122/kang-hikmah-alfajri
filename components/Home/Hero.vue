@@ -39,7 +39,7 @@
         <h2 class="text-xl font-bold mb-4">Hubungi Kami Melalui:</h2>
         <div class="flex flex-col space-y-2">
           <a
-            href="https://wa.me/6285923158567?text=Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan."
+            href="https://wa.me/6285923158567?text=Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan, dana dari investor sulit cair"
             target="_blank"
             class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
             >Chat via WhatsApp</a
