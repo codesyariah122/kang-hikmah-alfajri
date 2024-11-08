@@ -13,11 +13,11 @@
       yang lebih mendalam.
     </p>
 
-    <div class="flex justify-content-center gap-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center w-full max-w-screen-lg mx-auto">
       <div>
         <video
           class="w-full rounded-lg shadow-lg"
-          autoplay="true"
+          autoplay="false"
           controls
           src="/videos/ct1.mp4"
         >
