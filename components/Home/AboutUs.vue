@@ -21,7 +21,7 @@
         <img src="/images/service-1.jpeg" class="w-auto" alt="" />
       </div>
     </div>
-    <div class="flex mt-12 justify-center gap-6 w-screen">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 w-full max-w-screen-xl mx-auto">
       <HomeProductCard
         image="/images/sample1.jpeg"
         title="Minyak nyai lastri - Alfajri"
