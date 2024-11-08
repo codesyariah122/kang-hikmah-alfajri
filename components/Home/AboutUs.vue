@@ -24,12 +24,18 @@
     <div class="flex mt-12 justify-center gap-6 w-screen">
       <HomeProductCard
         image="/images/sample1.jpeg"
-        title="Minyak Khodam - Alfajri (Anti Rayap)"
+        title="Minyak nyai lastri - Alfajri"
         price="Rp. 10"
       />
       <HomeProductCard
         image="/images/sample2.jpeg"
-        title="Pelet Pengikat Suka Alfajri (Anti Lengket)"
+        title="Garam Ruwatan - Alfajri "
+        price="Rp. 15"
+      />
+
+      <HomeProductCard
+        image="/images/sample3.jpeg"
+        title="Minyak Hijau plus permata - Alfajri"
         price="Rp. 15"
       />
     </div>
