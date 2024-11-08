@@ -18,18 +18,20 @@
 
     <div class="flex justify-center place-items-center mt-6 mb-12">
       <div>
-        <img src="/images/service-1.jpeg" class="w-auto" alt="">
+        <img src="/images/service-1.jpeg" class="w-auto" alt="" />
       </div>
     </div>
-
-    <div class="flex mt-12 justify-center gap-6">
-      <div>
-        <img src="/images/sample1.jpeg" alt="">
-      </div>
-
-      <div>
-        <img src="/images/sample2.jpeg" alt="">
-      </div>
+    <div class="flex mt-12 justify-center gap-6 w-screen">
+      <HomeProductCard
+        image="/images/sample1.jpeg"
+        title="Minyak Khodam - Alfajri (Anti Rayap)"
+        price="Rp. 10"
+      />
+      <HomeProductCard
+        image="/images/sample2.jpeg"
+        title="Pelet Pengikat Suka Alfajri (Anti Lengket)"
+        price="Rp. 15"
+      />
     </div>
   </section>
 </template>
