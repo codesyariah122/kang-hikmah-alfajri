@@ -25,18 +25,18 @@
       <HomeProductCard
         image="/images/sample1.jpeg"
         title="Minyak nyai lastri - Alfajri"
-        price="Rp. 10"
+        price="Rp. 50"
       />
       <HomeProductCard
         image="/images/sample2.jpeg"
         title="Garam Ruwatan - Alfajri "
-        price="Rp. 15"
+        price="Rp. 75"
       />
 
       <HomeProductCard
         image="/images/sample3.jpeg"
         title="Minyak Hijau plus permata - Alfajri"
-        price="Rp. 15"
+        price="Rp. 55"
       />
     </div>
   </section>
