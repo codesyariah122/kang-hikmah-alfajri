@@ -21,5 +21,15 @@
         <img src="/images/service-1.jpeg" class="w-auto" alt="">
       </div>
     </div>
+
+    <div class="flex mt-12 justify-center gap-6">
+      <div>
+        <img src="/images/sample1.jpeg" alt="">
+      </div>
+
+      <div>
+        <img src="/images/sample2.jpeg" alt="">
+      </div>
+    </div>
   </section>
 </template>
