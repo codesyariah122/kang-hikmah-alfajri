@@ -1,12 +1,27 @@
 <template>
   <div class="profile-wrapper">
     <img
-      src="/images/profile.jpg"
+      :src="`${image}.${format}`"
       class="rounded-full w-48 h-48 md:w-96 md:h-96 mb-8 profile-image"
       alt="Profile Image"
     />
   </div>
 </template>
+
+<script setup>
+import { defineProps } from "vue";
+
+const props = defineProps({
+  image: {
+    type: String,
+    required: true,
+  },
+  format: {
+    type: String,
+    default: "webp",
+  },
+});
+</script>
 
 <style>
 .profile-wrapper {
@@ -24,7 +39,7 @@
 }
 
 .profile-image {
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -39,7 +54,11 @@
   width: 120%;
   height: 120%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 140, 0, 0.5), rgba(255, 69, 0, 0.6));
+  background: radial-gradient(
+    circle,
+    rgba(255, 140, 0, 0.5),
+    rgba(255, 69, 0, 0.6)
+  );
   filter: blur(1.5vw); /* Blur responsif */
   animation: flame 1.5s infinite ease-in-out alternate;
   mix-blend-mode: screen;
@@ -63,7 +82,7 @@
 .profile-image:hover {
   animation: rotate 5s linear infinite;
 }
- 
+
 @keyframes flame {
   0% {
     transform: scale(1) translateY(0);

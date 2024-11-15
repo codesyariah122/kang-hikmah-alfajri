@@ -14,15 +14,15 @@
     <div class="absolute inset-0 bg-black opacity-20 z-5"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white md:mt-12 md:mt-24 max-w-screen-lg mx-auto px-4">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">
-        Selamat Datang di Kang Hikmah AlTajrib
-      </h1>
+    <div class="relative z-10 text-center text-white  md:mt-24 max-w-screen-lg mx-auto px-4">
       <div class="flex justify-center">
-        <HomeMoleculesProfile />
+        <HomeMoleculesProfile image="/images/alfajri" format="webp"/>
       </div>
-      <p class="text-lg md:text-xl mb-12">
-        Layanan Konsultasi Pengobatan Alternatif, Spirituil dan konsultasi bidang ilmiah dalam idiom kebatinan yang mutlak
+      <h1 class="text-lg md:text-5xl font-bold mb-4 vujahday-script-regular">
+        Ahlinya menghidupkan yang mati dan mematikan yang hidup
+      </h1>
+      <p class="text-lg md:text-xl mb-12 merienda">
+        ~Barang siapa yang menyalakan api maka dia menyalakan kehidupan
       </p>
       <a id="get-started"
         @click="showPopup = true"
@@ -124,11 +124,24 @@ const startChat = () => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Vujahday+Script&display=swap');
 nav a {
   scroll-behavior: smooth;
 }
 
+.vujahday-script-regular {
+  font-family: "Vujahday Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.merienda{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 .fixed {
   position: fixed;
