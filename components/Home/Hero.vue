@@ -18,7 +18,7 @@
       <div class="flex justify-center">
         <HomeMoleculesProfile image="/images/alfajri" format="webp"/>
       </div>
-      <h1 class="text-lg md:text-5xl font-bold mb-12 vujahday-script-regular">
+      <h1 class="text-3xl md:text-5xl font-bold mb-12 vujahday-script-regular">
         HajatKu HajatMu Wujud, Ragumu Rugimu
       </h1>
       <small class="mb-12 merienda">Salaam ... </small>
