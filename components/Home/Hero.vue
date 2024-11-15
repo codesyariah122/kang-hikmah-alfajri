@@ -14,19 +14,20 @@
     <div class="absolute inset-0 bg-black opacity-20 z-5"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white  md:mt-24 max-w-screen-lg mx-auto px-4">
+    <div class="relative z-10 text-center text-white md:mt-24 max-w-screen-lg mx-auto px-4">
       <div class="flex justify-center">
         <HomeMoleculesProfile image="/images/alfajri" format="webp"/>
       </div>
-      <h1 class="text-lg md:text-5xl font-bold mb-4 vujahday-script-regular">
-        Ahlinya menghidupkan yang mati dan mematikan yang hidup
+      <h1 class="text-lg md:text-5xl font-bold mb-12 vujahday-script-regular">
+        HajatKu HajatMu Wujud, Ragumu Rugimu
       </h1>
+      <small class="mb-12 merienda">Salaam ... </small>
       <p class="text-lg md:text-xl mb-12 merienda">
-        ~Barang siapa yang menyalakan api maka dia menyalakan kehidupan
+        ~Jangan Lupa Tirakat - AlTajrib
       </p>
       <a id="get-started"
         @click="showPopup = true"
-        class="bg-blue-500 mt-16 mb-12 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        class="bg-blue-500 mb-36 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
         >Hubungi Kami </a>
     </div>
 
@@ -132,7 +133,7 @@ nav a {
 
 .vujahday-script-regular {
   font-family: "Vujahday Script", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
