@@ -15,6 +15,10 @@
         dalam "menyebarkan" Faham Para ulama... Karena dengan baju dukun, saya
         bisa masuk merangsek ke berbagai macam golongan...
       </p>
+      <blockquote>
+        "Ketika Anda ingin mengubah dunia, Anda harus menjadi Dukun Consultant Spritual."
+        - Sayang Mister Mahmud Alfajri
+      </blockquote>
     </div>
 
     <div class="flex justify-center place-items-center mt-6 mb-12">
