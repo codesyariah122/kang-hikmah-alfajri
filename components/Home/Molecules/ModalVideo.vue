@@ -11,7 +11,7 @@
         @click.stop
       >
         <!-- Video Player -->
-        <div class="relative pb-9/16"> <!-- Menjaga rasio 16:9 dengan padding-bottom -->
+        <div class="relative pb-9/16 mx-auto max-w-3xl px-4 py-4">
           <video
             class="w-full h-full rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-cover"
             autoplay="true"
@@ -26,27 +26,34 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue'
-  
-  // Define if the modal is open
-  const isOpen = ref(true)
-  const videoUrl = ref('/videos/popup-video.mp4') 
-  
-  const openModal = (url) => {
-    videoUrl.value = url
-    isOpen.value = true
-  }
-  
-  // Close the modal
-  const closeModal = () => {
-    isOpen.value = false
-    videoUrl.value = ''
-  }
-  
-  defineExpose({
-    openModal
+import { ref, nextTick } from 'vue'
+
+// Define if the modal is open
+const isOpen = ref(true)
+const videoUrl = ref('/videos/popup-video.mp4')
+
+const openModal = (url) => {
+  videoUrl.value = url
+  isOpen.value = true
+  // Ensure the video starts playing after the modal is visible
+  nextTick(() => {
+    const videoElement = document.querySelector('video')
+    if (videoElement) {
+      videoElement.play() // Start playing the video
+    }
   })
-  </script>
+}
+
+// Close the modal
+const closeModal = () => {
+  isOpen.value = false
+  videoUrl.value = ''
+}
+
+defineExpose({
+  openModal
+})
+</script>
   
   <style scoped>
   /* Aspect ratio helper for 16:9 video */
