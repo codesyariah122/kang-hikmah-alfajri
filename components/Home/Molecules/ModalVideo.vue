@@ -10,6 +10,7 @@
         :class="{'opacity-100 translate-y-0': isOpen, 'opacity-0 translate-y-4': !isOpen}"
         @click.stop
       >
+        <!-- Video Player -->
         <div class="relative pb-9/16 mx-auto max-w-3xl px-4 py-4">
           <video
             class="w-full h-full rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-cover"

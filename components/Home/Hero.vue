@@ -20,11 +20,11 @@
       <div class="flex justify-center">
         <HomeMoleculesProfile image="/images/alfajri" format="webp" />
       </div>
-      <h1 class="text-3xl md:text-5xl font-bold mt-6 vujahday-script-regular">
-        HajatKu HajatMu Wujud, Ragumu Rugimu
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 vujahday-script-regular">
+        HajatKu HajatMu Wujud<br/> Ragumu Rugimu
       </h1>
       <small class="mb-6 mt-24 merienda">Salaam ... </small>
-      <p class="text-lg md:text-xl mb-12 merienda">
+      <p class="text-lg md:text-xl mb-6 merienda">
         ~Jangan Lupa Tirakat - AlTajrib
       </p>
       <a
