@@ -7,7 +7,7 @@
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="/images/alfajri.webp" class="h-8" alt="Flowbite Logo" />
+        <img :src="brandImg" class="h-8" alt="Flowbite Logo" />
         <span :class="['block', isScrolled ? 'text-gray-900' : 'text-white']"
           class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
           >AlTajrib</span
@@ -103,14 +103,17 @@
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const isScrolled = ref(false);
-const isMenuOpen = ref(false); // State untuk kontrol menu
+const isMenuOpen = ref(false); 
+const brandImg = ref('/images/alfajri-putih.webp');
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50; // Ganti 50 dengan nilai yang diinginkan
+  isScrolled.value = window.scrollY > 50;
+  console.log(window.scrollY);
+  brandImg.value = window.scrollY > 50 ? '/images/alfajri.webp' : '/images/alfajri-putih.webp'
 };
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value; // Toggle menu saat hamburger diklik
+  isMenuOpen.value = !isMenuOpen.value;
 };
 
 onMounted(() => {

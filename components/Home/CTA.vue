@@ -64,7 +64,7 @@ export default {
         window.$crisp.push(["set", "user:email", [this.email]]);
         window.$crisp.push(["do", "chat:show"]);
         window.$crisp.push(["do", "chat:open"]);
-        $crisp.push([
+        window.$crisp.push([
           "set",
           "message:text",
           [

@@ -2,7 +2,7 @@
   <div class="profile-wrapper">
     <img
       :src="`${image}.${format}`"
-      class="rounded-full w-48 h-48 md:w-96 md:h-96 mb-8 profile-image"
+      class="rounded-full w-48 h-48 md:w-80 md:h-80 mb-8 profile-image"
       alt="Profile Image"
     />
   </div>
@@ -49,10 +49,10 @@ const props = defineProps({
 .profile-wrapper::after {
   content: "";
   position: absolute;
-  top: -10%; /* Offset responsif */
+  top: -5%; /* Offset responsif */
   left: -10%;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: radial-gradient(
     circle,

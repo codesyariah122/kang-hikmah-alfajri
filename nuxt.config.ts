@@ -88,6 +88,7 @@ export default defineNuxtConfig({
   },
   plugins: [
     '~/plugins/fontawesome',
-    {src: '~/plugins/crisp', mode: 'client', ssr: false}
+    {src: '~/plugins/crisp', mode: 'client', ssr: false},
+    '~/plugins/sweetalert.js'
     ]
 })

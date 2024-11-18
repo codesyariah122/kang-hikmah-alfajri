@@ -14,21 +14,25 @@
     <div class="absolute inset-0 bg-black opacity-20 z-5"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white md:mt-24 max-w-screen-lg mx-auto px-4">
+    <div
+      class="relative z-10 text-center text-white md:mt-24 max-w-screen-lg mx-auto px-4"
+    >
       <div class="flex justify-center">
-        <HomeMoleculesProfile image="/images/alfajri" format="webp"/>
+        <HomeMoleculesProfile image="/images/alfajri" format="webp" />
       </div>
-      <h1 class="text-3xl md:text-5xl font-bold mb-2 mt-12 vujahday-script-regular">
+      <h1 class="text-3xl md:text-5xl font-bold mt-6 vujahday-script-regular">
         HajatKu HajatMu Wujud, Ragumu Rugimu
       </h1>
       <small class="mb-12 merienda">Salaam ... </small>
       <p class="text-lg md:text-xl mb-12 merienda">
         ~Jangan Lupa Tirakat - AlTajrib
       </p>
-      <a id="get-started"
+      <a
+        id="get-started"
         @click="showPopup = true"
-        class="bg-blue-500 mb-36 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
-        >Hubungi Kami </a>
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        >Hubungi Kami
+      </a>
     </div>
 
     <!-- Popup Modal -->
@@ -55,7 +59,7 @@
         <div class="flex justify-center my-6">
           <div>
             <button
-              @click="showPopup = false"
+              @click="closeModal"
               type="button"
               class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
             >
@@ -67,7 +71,10 @@
     </div>
 
     <!-- Live Chat Modal -->
-    <div v-if="isModalOpen" class="fixed inset-0 flex items-center justify-center z-50">
+    <div
+      v-if="isModalOpen"
+      class="fixed inset-0 flex items-center justify-center z-50"
+    >
       <div class="bg-white p-6 rounded-lg shadow-lg">
         <h3 class="text-xl font-bold mb-4 text-black">Masukkan Email Anda</h3>
         <input
@@ -97,7 +104,13 @@
 
 <script setup>
 import { ref } from "vue";
+import { useNuxtApp } from '#app';
 
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
+const swal = VueSweetalert2;
+const { $swal } = useNuxtApp();
 const showPopup = ref(false);
 const isModalOpen = ref(false);
 const email = ref("");
@@ -115,7 +128,14 @@ const startChat = () => {
   if (email.value) {
     window.$crisp.push(["set", "user:email", [email.value]]);
     window.$crisp.push(["do", "chat:show"]);
-    $crisp.push(["set", "message:text", ["Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan."]]);
+    window.$crisp.push(["do", "chat:open"]);
+    window.$crisp.push([
+      "set",
+      "message:text",
+      [
+        "Halo kang, saya bisa gak yah konsultasi permasalah hidup saya , saya sedang seret keuangan.",
+      ],
+    ]);
 
     closeModal();
   } else {
@@ -125,8 +145,8 @@ const startChat = () => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Vujahday+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Vujahday+Script&display=swap");
 nav a {
   scroll-behavior: smooth;
 }
@@ -137,7 +157,7 @@ nav a {
   font-style: normal;
 }
 
-.merienda{
+.merienda {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: <weight>;
