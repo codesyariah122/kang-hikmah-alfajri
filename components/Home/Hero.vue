@@ -23,7 +23,7 @@
       <h1 class="text-3xl md:text-5xl font-bold mt-6 vujahday-script-regular">
         HajatKu HajatMu Wujud, Ragumu Rugimu
       </h1>
-      <small class="mb-12 merienda">Salaam ... </small>
+      <small class="mb-6 mt-24 merienda">Salaam ... </small>
       <p class="text-lg md:text-xl mb-12 merienda">
         ~Jangan Lupa Tirakat - AlTajrib
       </p>
