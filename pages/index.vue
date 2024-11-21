@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeCTA />
-    <HomeMoleculesModalVideo />
+    <!-- <HomeMoleculesModalVideo /> -->
     <HomeAboutUs />
     <HomeReel />
     <HomeServices />

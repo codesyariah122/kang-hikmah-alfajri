@@ -1,31 +1,31 @@
 <template>
-    <div 
-      v-if="isOpen" 
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-300 ease-in-out" 
-      :class="{'opacity-100': isOpen, 'opacity-0': !isOpen}"
-      @click="closeModal"
+  <div 
+    v-if="isOpen" 
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-300 ease-in-out" 
+    :class="{'opacity-100': isOpen, 'opacity-0': !isOpen}"
+    @click="closeModal"
+  >
+    <div
+      class="relative w-full max-w-full sm:max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden opacity-0 transform transition-all duration-500 ease-in-out"
+      :class="{'opacity-100 translate-y-0': isOpen, 'opacity-0 translate-y-4': !isOpen}"
+      @click.stop
     >
-      <div
-        class="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden opacity-0 transform transition-all duration-500 ease-in-out"
-        :class="{'opacity-100 translate-y-0': isOpen, 'opacity-0 translate-y-4': !isOpen}"
-        @click.stop
-      >
-        <!-- Video Player -->
-        <div class="relative pb-9/16 mx-auto max-w-3xl px-4 py-4">
-          <video
-            class="w-full h-full rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-cover"
-            autoplay="true"
-            :src="videoUrl"
-            controls
-          >
-            Browser Anda tidak mendukung video.
-          </video>
-        </div>
+      <!-- Video Player -->
+      <div class="relative pb-9/16 mx-auto px-4 py-4">
+        <video
+          class="w-full h-auto rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-cover"
+          autoplay="true"
+          :src="videoUrl"
+          controls
+        >
+          Browser Anda tidak mendukung video.
+        </video>
       </div>
     </div>
-  </template>
-  
-  <script setup>
+  </div>
+</template>
+
+<script setup>
 import { ref, nextTick } from 'vue'
 
 // Define if the modal is open
@@ -54,11 +54,17 @@ defineExpose({
   openModal
 })
 </script>
-  
-  <style scoped>
-  /* Aspect ratio helper for 16:9 video */
+
+<style scoped>
+/* Aspect ratio helper for 16:9 video */
+.pb-9\/16 {
+  padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+}
+
+/* Optional: add a max-width for the video container */
+@media (max-width: 640px) {
   .pb-9\/16 {
-    padding-bottom: 56.25%;
+    padding-bottom: 75%; /* Adjust aspect ratio for mobile if needed */
   }
-  </style>
-  
+}
+</style>
