@@ -11,10 +11,10 @@
       @click.stop
     >
       <!-- Video Player -->
-      <div class="relative pb-9/16 mx-auto px-4 py-4">
+      <div class="relative aspect-w-16 aspect-h-9">
         <video
-          class="w-full h-auto rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-cover"
-          autoplay="true"
+          class="w-full h-full rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out object-contain"
+          autoplay
           :src="videoUrl"
           controls
         >
@@ -25,12 +25,13 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref, nextTick } from 'vue'
 
 // Define if the modal is open
 const isOpen = ref(true)
-const videoUrl = ref('/videos/popup-video.mp4')
+const videoUrl = ref('/videos/popup-video2.mp4')
 
 const openModal = (url) => {
   videoUrl.value = url
@@ -56,15 +57,22 @@ defineExpose({
 </script>
 
 <style scoped>
-/* Aspect ratio helper for 16:9 video */
-.pb-9\/16 {
-  padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+.aspect-w-16 {
+  position: relative;
+  width: 100%;
 }
 
-/* Optional: add a max-width for the video container */
-@media (max-width: 640px) {
-  .pb-9\/16 {
-    padding-bottom: 75%; /* Adjust aspect ratio for mobile if needed */
-  }
+.aspect-h-9 {
+  padding-top: 56.25%; /* 16:9 ratio */
+}
+
+.aspect-w-16.aspect-h-9 > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Memastikan video tidak terpotong */
 }
 </style>
+

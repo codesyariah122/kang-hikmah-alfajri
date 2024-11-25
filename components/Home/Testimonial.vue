@@ -21,8 +21,15 @@
         >
           <div class="image-wrapper">
             <!-- Tampilkan video di slide pertama -->
-            <template v-if="index === 0 && testimonial.video">
-              <video
+            <template v-if="index === 0 || index === 1 && testimonial.video">
+              <video v-if="testimonial.name === 'popup'"
+                :src="`/videos/${testimonial.video}`"
+                autoplay
+                muted
+                loop
+                class="testimonial-video"
+              ></video>
+              <video v-else
                 :src="`/images/testimonial/${testimonial.video}`"
                 autoplay
                 muted
@@ -54,7 +61,11 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css/pagination";
 
 const testimonials = [
-  { video: "testi-video1.mp4", name: "Ahmad" },
+  { name: "Ahmad", video: "testi-video1.mp4" },
+  {
+    name: 'popup',
+    video: 'popup-video.mp4'
+  },
   {
     message: "Proses mudah dan hasil nyata.",
     name: "Budi",
