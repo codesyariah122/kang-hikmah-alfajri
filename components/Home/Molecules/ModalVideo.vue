@@ -29,18 +29,16 @@
 <script setup>
 import { ref, nextTick } from 'vue'
 
-// Define if the modal is open
 const isOpen = ref(true)
 const videoUrl = ref('/videos/popup-video2.mp4')
 
 const openModal = (url) => {
   videoUrl.value = url
   isOpen.value = true
-  // Ensure the video starts playing after the modal is visible
   nextTick(() => {
     const videoElement = document.querySelector('video')
     if (videoElement) {
-      videoElement.play() // Start playing the video
+      videoElement.play()
     }
   })
 }
