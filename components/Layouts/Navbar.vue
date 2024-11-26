@@ -108,7 +108,6 @@ const brandImg = ref('/images/alfajri-putih.webp');
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
-  console.log(window.scrollY);
   brandImg.value = window.scrollY > 50 ? '/images/alfajri.webp' : '/images/alfajri-putih.webp'
 };
 

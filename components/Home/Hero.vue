@@ -122,6 +122,7 @@ const openModalLiveChat = () => {
 
 const closeModal = () => {
   isModalOpen.value = false;
+  showPopup.value = false;
 };
 
 const startChat = () => {
